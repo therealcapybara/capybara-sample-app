@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class CapybaraSampleAppApplication
+class CapybaraApplication
 
 fun main(args: Array<String>) {
-	runApplication<CapybaraSampleAppApplication>(*args)
+	runApplication<CapybaraApplication>(*args)
 }
