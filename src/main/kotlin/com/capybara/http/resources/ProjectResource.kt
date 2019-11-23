@@ -5,11 +5,18 @@ import org.springframework.stereotype.Component
 
 @Component
 class ProjectResource: Resource({
-    name = "Project"
-    methods = listOf(Get, Post, Delete).toMutableList()
-    properties = listOf(Property(
-            name = "title",
-            type = PropertyType())
-    ).toMutableList()
+    name("project")
+
+    methods {
+        get()
+        post()
+        delete()
+        put()
+    }
+
+    properties {
+        property("title", TextType)
+        property("abstract", TextType)
+    }
 
 })
