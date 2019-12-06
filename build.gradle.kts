@@ -17,12 +17,16 @@ repositories {
 }
 
 dependencies {
+	implementation("com.capybara:capybara-core:0.0.1-SNAPSHOT")
+
+
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-	implementation("com.capybara:capybara-core:1.0.1-SNAPSHOT")
+	implementation("com.google.code.gson:gson:2.8.6")
+	implementation("io.projectreactor.addons:reactor-adapter:3.3.0.RELEASE")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}

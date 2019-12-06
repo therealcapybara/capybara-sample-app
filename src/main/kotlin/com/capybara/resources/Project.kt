@@ -1,10 +1,12 @@
-package com.capybara.http.resources
+package com.capybara.resources
 
-import com.capybara.core.model.*
+import com.capybara.core.model.Resource
+import com.capybara.core.model.TextType
 import org.springframework.stereotype.Component
 
+
 @Component
-class ProjectResource: Resource({
+class Project : Resource({
     name("project")
 
     methods {
@@ -15,8 +17,12 @@ class ProjectResource: Resource({
     }
 
     properties {
+        property("id", TextType)
         property("title", TextType)
         property("abstract", TextType)
     }
 
+    backend {
+        mongoDb(host = "localhost", port = 27017, database = "xpto")
+    }
 })
