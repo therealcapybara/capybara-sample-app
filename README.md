@@ -1,2 +1,4 @@
-# capybara-sample-app
-sample app using capybara
+# capybara-spring-boot-starter
+
+capybara-spring-boot-starter
+
