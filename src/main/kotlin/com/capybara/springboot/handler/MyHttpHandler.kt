@@ -17,7 +17,6 @@ import reactor.core.publisher.Mono
 class MyHttpHandler(private val coreHttpHandler: HttpHandler) {
 
     fun handleRequest(request: ServerRequest): Mono<ServerResponse> {
-
         val headers = request
                 .headers()
                 .asHttpHeaders()
